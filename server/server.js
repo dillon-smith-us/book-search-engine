@@ -27,7 +27,6 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // comment this out at end of mern development
-app.use(routes);
 
 app.get('*',  (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
